@@ -2,5 +2,18 @@
   background-image: url("../img/hero.jpg");
   background-size: cover;
   background-position: center;
-  height: 60vh;
+  height: 80vh;
+}
+#hero #overlay {
+  background-color: rgba(var(--black0), 0.75);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hero #overlay section h1 {
+  color: white;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-size: rem-calc(100);
 }
