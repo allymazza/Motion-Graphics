@@ -82,7 +82,7 @@
       "oAP" : "\/week-2-inclass\/deploy\/img\/hero.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -162,8 +162,8 @@
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/week-2-inclass\/dev\/index.html",
-      "oF" : 0
+      "oAP" : "\/week-2-inclass\/deploy\/index.html",
+      "oF" : 2
     },
     "\/week-2-inclass\/dev\/js\/scripts.js" : {
       "bF" : 0,
@@ -328,15 +328,15 @@
     },
     "\/week-2-inclass\/dev\/scss\/sections\/_hero.scss" : {
       "aP" : 0,
-      "bl" : 0,
+      "bl" : 1,
       "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/week-2-inclass\/dev\/scss\/sections\/_hero.css",
-      "oF" : 0,
+      "oF" : 3,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -350,8 +350,8 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/week-2-inclass\/dev\/scss\/styles.css",
-      "oF" : 0,
+      "oAP" : "\/week-2-inclass\/deploy\/styles.css",
+      "oF" : 2,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
