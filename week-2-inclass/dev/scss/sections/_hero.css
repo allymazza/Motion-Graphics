@@ -23,4 +23,9 @@
   color: var(--white);
   padding: 20px 20px;
   font-size: rem-calc(25);
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+#hero #overlay section button i {
+  margin-left: 16px;
 }
