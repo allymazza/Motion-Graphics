@@ -124,7 +124,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/week-2-inclass\/dev\/content\/hero.html",
       "oF" : 0
     },
@@ -140,7 +140,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/week-2-inclass\/dev\/global\/head.html",
       "oF" : 0
     },
@@ -156,7 +156,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/week-2-inclass\/dev\/global\/scripts.html",
       "oF" : 0
     },
@@ -176,6 +176,14 @@
       "oAP" : "\/week-2-inclass\/deploy\/index.html",
       "oF" : 3
     },
+    "\/week-2-inclass\/dev\/js\/index.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/week-2-inclass\/dev\/js\/index.html",
+      "oF" : 0
+    },
     "\/week-2-inclass\/dev\/js\/scripts-min.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -193,7 +201,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/week-2-inclass\/deploy\/styles.css",
+      "oAP" : "\/week-2-inclass\/dev\/js\/scripts-min.js",
       "oF" : 2,
       "sC" : 3,
       "tS" : 0
@@ -401,6 +409,14 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/week-2-inclass\/index.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/week-2-inclass\/index.html",
+      "oF" : 0
     },
     "\/week-2-inclass\/node_modules" : {
       "ft" : 65536,
