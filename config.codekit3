@@ -84,7 +84,7 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/week-2-inclass\/deploy\/index.html",
-      "oF" : 0
+      "oF" : 2
     },
     "\/week-2-inclass\/deploy\/js\/scripts-min-min.js" : {
       "bF" : 0,
@@ -104,7 +104,7 @@
       "mi" : 1,
       "oA" : 0,
       "oAP" : "\/week-2-inclass\/deploy\/js\/scripts-min-min.js",
-      "oF" : 0,
+      "oF" : 1,
       "sC" : 3,
       "tS" : 0
     },
@@ -165,8 +165,8 @@
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/week-2-inclass\/dev\/index.html",
-      "oF" : 0
+      "oAP" : "\/week-2-inclass\/deploy\/index.html",
+      "oF" : 2
     },
     "\/week-2-inclass\/dev\/index.kit" : {
       "cB" : 0,
@@ -188,13 +188,13 @@
       "tS" : 0
     },
     "\/week-2-inclass\/dev\/js\/scripts.js" : {
-      "bF" : 0,
+      "bF" : 4,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/week-2-inclass\/dev\/js\/scripts-min.js",
-      "oF" : 0,
+      "oAP" : "\/week-2-inclass\/deploy\/styles.css",
+      "oF" : 2,
       "sC" : 3,
       "tS" : 0
     },
