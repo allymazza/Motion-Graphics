@@ -28,27 +28,6 @@
       "rFN" : 0,
       "uCM" : 0
     },
-    "\/week-2-inclass\/assets\/daniel-leone-2500pixels.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/week-2-inclass\/assets\/daniel-leone-2500pixels.html",
-      "oF" : 0
-    },
-    "\/week-2-inclass\/assets\/daniel-leone-g30P1zcOzXo-unsplash.jpg" : {
-      "ft" : 16384,
-      "iS" : 833978,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/week-2-inclass\/assets\/daniel-leone-g30P1zcOzXo-unsplash.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/week-2-inclass\/assets\/images\/daniel-leone-2500pixels.jpg" : {
       "ft" : 16384,
       "iS" : 64949,
@@ -61,6 +40,18 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/week-2-inclass\/deploy\/css\/styles-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/week-2-inclass\/deploy\/css\/styles-min-min.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/week-2-inclass\/deploy\/css\/styles.css" : {
       "aP" : 1,
@@ -117,6 +108,18 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/week-2-inclass\/deploy\/styles.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/week-2-inclass\/deploy\/styles-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/week-2-inclass\/dev\/content\/hero.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -157,13 +160,32 @@
       "oAP" : "\/week-2-inclass\/dev\/global\/scripts.html",
       "oF" : 0
     },
+    "\/week-2-inclass\/dev\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/week-2-inclass\/dev\/index.html",
+      "oF" : 0
+    },
     "\/week-2-inclass\/dev\/index.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/week-2-inclass\/deploy\/index.html",
-      "oF" : 2
+      "oF" : 3
+    },
+    "\/week-2-inclass\/dev\/js\/scripts-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/week-2-inclass\/dev\/js\/scripts-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
     },
     "\/week-2-inclass\/dev\/js\/scripts.js" : {
       "bF" : 0,
@@ -326,6 +348,18 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/week-2-inclass\/dev\/scss\/sections\/_hero.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/week-2-inclass\/dev\/scss\/sections\/_hero-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/week-2-inclass\/dev\/scss\/sections\/_hero.scss" : {
       "aP" : 0,
       "bl" : 1,
@@ -340,6 +374,18 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/week-2-inclass\/dev\/scss\/styles.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/week-2-inclass\/dev\/scss\/styles-min.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/week-2-inclass\/dev\/scss\/styles.scss" : {
       "aP" : 0,
