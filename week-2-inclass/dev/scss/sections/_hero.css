@@ -17,7 +17,10 @@
   font-weight: 400;
   font-size: rem-calc(100);
 }
-#hero #bg section aside button {
+#hero #bg section div h1 #span {
+  opacity: 50%;
+}
+#hero #bg section aside #button {
   border: none;
   background-color: #07579d;
   color: var(--white);
@@ -27,6 +30,6 @@
   font-weight: 400;
   margin-top: 20px;
 }
-#hero #bg section aside button i {
+#hero #bg section aside #button i {
   margin-left: 16px;
 }

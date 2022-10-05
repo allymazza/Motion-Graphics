@@ -17,11 +17,14 @@
                 font-family: 'Shadows Into Light', cursive;
                 font-weight: 400;
                 font-size: rem-calc(100);
+                #span{
+                    opacity: 50%;
+                }
             }
         }
 
         aside{
-            button{
+            #button{
                 border: none;
                 background-color: #07579d;
                 color: var(--white);
