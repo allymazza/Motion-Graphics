@@ -2,9 +2,9 @@ import { gsap } from "gsap";
 
 function heroAnimation(){
     var tl = gsap.timeline();
-    tl.from("#line-1",{duration:1,x:200,alpha:0})
-        .from("#line-2",{duration:1,x:-100,alpha:0,delay:1.5})
-        .from("#relax-btn",{duration:1,y: -100,alpha:0,delay:2.5})
+    tl.from("#line-1",{duration:.5,x:200,alpha:0})
+        .from("#line-2",{duration:1,x:-100,alpha:0,delay:1})
+        .from("#relax-btn",{duration:1,y: -100,alpha:0,delay:2})
 
     return tl;
 
@@ -21,7 +21,7 @@ mm.add("(min-width: 768px)", () => {
 })
 
 mm.add("(min-width: 767px)", () => {
-    heroSizeNumber = 1.25;
+    heroSizeNumber = 1.5;
 })
 
 let relaxBtn = document.querySelector("#relax-btn");
@@ -29,6 +29,7 @@ let relaxBtn = document.querySelector("#relax-btn");
 var buttonAnimation = gsap.timeline({paused:true})
     buttonAnimation.to("#relax-btn",{duration:0.25,backgroundColor:"#5992fc"})
         .to("#relax-btn",{duration:1, rotation:360})
+        .to("#relax-btn", {duration:0.5, scale:heroSizeNumber},"goAway")
         .to("#relax-btn",{duration:0.25,backgroundColor:"#07579d"});
 
 
