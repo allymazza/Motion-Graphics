@@ -1,32 +1,17 @@
+/* =============
+    Hero 2
+============= */
 #hero-2{
-    background-image: url("../img/heroes/hero-2.jpg");
-    background-size: cover;
-    background-position: bottom;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". hero-2 .";
 
-    @include md{
-        height: 80vh;
+    @include xl{
+        grid-template-columns: auto 1200px auto;
     }
 
-    @include lg{
-        height: 70vh;
+    img{
+        grid-area: hero-2;
+        width: 100%;
     }
-
-    >div{
-        text-align: center;
-        color: var(--white);
-
-        h1{
-            font-family: 'Righteous', cursive;
-            font-weight: 400;
-            font-size: rem-calc(80);
-        }
-    }
-
-
-
-
 }
