@@ -3,6 +3,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
+var heroTL = gsap.timeline({paused:true});
+    heroTL.to("#hero", {duration: 2, opacity: 0}, {opacity: 1, y: 0});
+
+
+
 function heroAnimation(){
     var tl = gsap.timeline();
     tl.from("#hero", {duration: 2, opacity: 0}, {opacity: 1, y: 0});
@@ -19,12 +24,12 @@ function historyAnimation(){
     return tl;
 }
 
-function skillsAnimation(){
-    var tl = gsap.timeline();
-    tl.from("#emotion", {duration:1, x:200, alpha:0, scrollTrigger: { trigger: "#emotion"}})
+// function skillsAnimation(){
+//     var tl = gsap.timeline();
+//     tl.from("#emotion", {duration:1, x:200, alpha:0, scrollTrigger: { trigger: "#emotion"}})
 
 var mainTimeline = gsap.timeline();
 mainTimeline.add(heroAnimation())
     .add(historyAnimation())
-    .add(skillsAnimation())
+    // .add(skillsAnimation())
     // .add(galleryAnimation())
