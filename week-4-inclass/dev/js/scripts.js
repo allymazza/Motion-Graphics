@@ -93,8 +93,20 @@ function skillsAnimation(){
 
 function hero2Animation(){
     var tl = gsap.timeline();
+    tl.from("#hero-2",
+        {duration:1,
+            clipPath:"inset(0 60%)",
+        // scale:2,
+        // alpha:0, 
+        scrollTrigger:{ 
+            trigger: "#math", 
+            scrub: true, 
+            start:"top 70%", 
+            end:"bottom 10%",
+            markers: false}})
+        
+    }
 
-}
 
 
 var mainTimeline = gsap.timeline();
