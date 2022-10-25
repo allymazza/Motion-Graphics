@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 function heroAnimation(){
     var tl = gsap.timeline();
-    tl.from("#hero", {duration: 2, opacity: 0}, {opacity: 1, y: 0});
+    tl.from("#hero", {duration: 2, scale: 3, opacity: 0}, {opacity: 1, y: 0});
 
     return tl;
 }
@@ -30,7 +30,7 @@ function historyAnimation(){
             {duration:1,
             x:-200,
             alpha:0})
-        .from("history-first img",
+        .from("#history-first img",
             {duration:1,
             y:-200,
             rotation:360,
@@ -41,7 +41,7 @@ function historyAnimation(){
             y:200,
             alpha:0})
 
-        .from("history-last", 
+        .from("#history-last", 
         {duration:1,
             y:-200, 
             alpha:0});
@@ -60,27 +60,20 @@ function skillsAnimation(){
         {duration:1, 
         y:-200, 
          alpha:0})
-         .from("#skills-content h4", 
-            {scale:3, 
-            rotation:360,
-            alpha:0})
         .from("#skills-content p", 
             {duration:1, 
             y:200,
             alpha:0})
-        .from("#emotion", 
+        .from("#skills-content h4", 
+            {scale:3, 
+            rotation:360,
+            alpha:0})
+        .from(".yellow-bar", 
             {duration:1, 
             x:-200, 
+            stagger:.25,
             alpha:0})
-        .from("#learning", 
-            {duration:1, 
-            x:200, 
-            alpha:0})
-        .from("#math", 
-            {duration:1, 
-            x:-200, 
-            alpha:0})
-        .from("#skills aside div",
+        .from("#aside",
         {duration: 1,
         scale: 3,
         alpha:0})
@@ -108,35 +101,35 @@ function hero2Animation(){
         trigger: "#skynet",
         scrub: true, 
         start:"top 40%", 
-        end:"bottom 10%",
-        markers: false}});
+        end:"bottom 95%",
+        markers: true}});
 
-    tl.from("gallery-7", {
-        duration:1,
+    tl.from("#gallery-7", {
+        duration:2,
         scale:3,
         rotation:360,
         alpha:0})
-        .from("gallery-1", {
+        .from("#gallery-1", {
             duration:1,
             x: -200,
             alpha:0})
-         .from("gallery-2", {
+         .from("#gallery-2", {
             duration:1,
             x: 200,
             alpha:0})
-        .from("gallery-3", {
+        .from("#gallery-3", {
             duration:1,
             y: -200,
             alpha:0})
-        .from("gallery-4", {
+        .from("#gallery-4", {
             duration:1,
             x: -200,
             alpha:0})
-        .from("gallery-5", {
+        .from("#gallery-5", {
             duration:1,
             y: 200,
             alpha:0})
-        .from("gallery-6", {
+        .from("#gallery-6", {
             duration:1,
             x: 200,
             alpha:0})
@@ -150,3 +143,17 @@ mainTimeline.add(heroAnimation())
     .add(skillsAnimation())
     .add(hero2Animation())
     .add(skynetAnimation())
+
+    const showAnim = gsap.from('header', { 
+        yPercent: -100,
+        paused: true,
+        duration: 0.2
+      }).progress(1);
+      
+      ScrollTrigger.create({
+        start: "top top",
+        end: 99999,
+        onUpdate: (self) => {
+          self.direction === -1 ? showAnim.play() : showAnim.reverse()
+        }
+      });
