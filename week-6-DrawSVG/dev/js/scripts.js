@@ -18,8 +18,12 @@ function simpleMotion(){
     var tl = gsap.timeline()
     tl.from("#right-arrow",{scale:0, duration:0.25, drawSVG: 0, stagger:.25})
     .from("#left-arrow",{scale:0, duration:0.25, drawSVG: 0})
+    .from("#right-arrow",{x:-100, duration:0.25, drawSVG: 0, stagger:.25})
+    .from("#left-arrow",{x:100, duration:0.25, drawSVG: 0})
     .from("#up-arrow",{ scale:0, duration:0.25, stagger:0.25, drawSVG: 0})
     .from("#down-arrow",{ scale:0, duration:0.25, stagger:0.25, drawSVG: 0})
+    .from("#up-arrow",{y:100, duration:0.25, drawSVG: 0, stagger:.25})
+    .from("#down-arrow",{y:-100, duration:0.25, drawSVG: 0})
     .from("#star",{scale:4, rotation: 360, duration:0.5, drawSVG: 0})
     return tl;
     
