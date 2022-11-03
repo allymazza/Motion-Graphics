@@ -41,7 +41,7 @@ function UIMotion(){
     var tl = gsap.timeline()
     tl.from("#box",{drawSVG:"100% 100%"},{duration:1, drawSVG:"50% 50%"},"drawOutline")
     .from("#bg",{duration:1, scaleY:0})
-    .from("#upload",{duration:0.5, alpha:0, x:20, stagger: 0.2},"-=50%")
+    .from("#upload",{duration:0.5, alpha:0, x:0, stagger: 0.2},"-=50%")
     .from("#arrow",{y: -100, duration:0.25, drawSVG:0})
     .from("#line",{y:100, duration:0.25, drawSVG:0})
     .from("#arrow",{rotation:360, duration:0.25, drawSVG:0})
