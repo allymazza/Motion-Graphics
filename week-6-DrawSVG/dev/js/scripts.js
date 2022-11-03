@@ -6,21 +6,6 @@ gsap.registerPlugin(DrawSVGPlugin, GSDevTools);
 
 function simpleMotion(){
 
-    // var line = document.querySelector("#center");
-    
-    // line = line.getBBox();
-   
-
-    // var leftArrow = document.querySelector("#left-arrow");
-    // leftArrow = leftArrow.getBBox();
-
-    // var center = document.querySelector("#center");
-    // center = center.getBBox();
-   
-
-    // gsap.set("#left-arrow",{x:line.width / 4 + leftArrow.width / 2, transformOrigin:"center" })
-    // gsap.set("#right-arrow",{x:-line.width/ 4 - leftArrow.width / 2, transformOrigin:"center" })
-
 
     var tl = gsap.timeline()
     tl.from("#right-arrow",{scale:0, duration:0.15, drawSVG: 0, stagger:.25})
@@ -43,9 +28,10 @@ function UIMotion(){
     var tl = gsap.timeline()
     tl.from("#box",{drawSVG:"100% 100%"},{duration:1, drawSVG:"50% 50%"},"drawOutline")
     .from("#bg",{duration:0.5, scaleX:0})
-    .from(".letter",{duration:0.2, alpha:0, x:20, stagger: 0.2},"-=50%")
+    .from("#upload",{duration:0.2, alpha:0, x:20, stagger: 0.2},"-=50%")
     .from("#arrow",{y: -100, duration:0.25, drawSVG:0})
     .from("#line",{y:100, duration:0.25, drawSVG:0})
+    .from("#arrow",{rotation:360, duration:0.25, drawSVG:0})
     return tl;
 }
 

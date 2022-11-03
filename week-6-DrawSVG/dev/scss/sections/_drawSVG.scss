@@ -22,11 +22,12 @@
             align-items: center;
             svg{
                 width: 100%;
+                display: flex;
             }
         }
     }
 
     .grow-right{
-        // display: none;
+        display: none;
     }
 }
