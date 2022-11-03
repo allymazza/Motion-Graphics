@@ -24,10 +24,11 @@
                 width: 100%;
                 display: flex;
             }
-        }
-    }
 
-    .grow-right{
-        display: none;
+            .upload{
+                display: flex;
+                justify-content: center;
+            }
+        }
     }
 }

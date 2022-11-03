@@ -393,6 +393,7 @@ textarea {
   width: 100%;
   display: flex;
 }
-#drawSVG-container .grow-right {
-  display: none;
+#drawSVG-container .drawSVG .svg .upload {
+  display: flex;
+  justify-content: center;
 }

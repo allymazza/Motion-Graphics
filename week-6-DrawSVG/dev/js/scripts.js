@@ -7,12 +7,20 @@ gsap.registerPlugin(DrawSVGPlugin, GSDevTools);
 function simpleMotion(){
 
 
+    
+ 
+     var leftArrow = document.querySelector("#left-arrow");
+     leftArrow = leftArrow.getBBox();
+ 
+     var rightArrow = document.querySelector("#right-arrow");
+     rightArrow = rightArrow.getBBox();
+
     var tl = gsap.timeline()
-    tl.from("#right-arrow",{scale:0, duration:0.15, drawSVG: 0, stagger:.25})
-    .from("#left-arrow",{scale:0, duration:0.15, drawSVG: 0})
-    .from("#up-arrow",{ scale:0, duration:0.15, stagger:0.25, drawSVG: 0})
-    .from("#down-arrow",{ scale:0, duration:0.15, stagger:0.25, drawSVG: 0})
-    .from("#star",{scale:4, rotation: 360, duration:0.25, drawSVG: 0})
+    tl.from("#right-arrow",{scale:0, duration:0.25, drawSVG: 0, stagger:.25})
+    .from("#left-arrow",{scale:0, duration:0.25, drawSVG: 0})
+    .from("#up-arrow",{ scale:0, duration:0.25, stagger:0.25, drawSVG: 0})
+    .from("#down-arrow",{ scale:0, duration:0.25, stagger:0.25, drawSVG: 0})
+    .from("#star",{scale:4, rotation: 360, duration:0.5, drawSVG: 0})
     return tl;
     
 }
