@@ -17,14 +17,14 @@ function simpleMotion(){
 
     var tl = gsap.timeline()
     tl.from("#right-arrow",{scale:0, duration:0.25, drawSVG: 0, stagger:.25})
-    .from("#left-arrow",{scale:0, duration:0.25, drawSVG: 0})
-    .from("#right-arrow",{x:-100, duration:0.25, drawSVG: 0, stagger:.25})
+    .from("#left-arrow",{scale:0, duration:0.25, drawSVG: 0, stagger:.25})
+    .from("#right-arrow",{x:-100, duration:0.25, drawSVG: 0, stagger:.5})
     .from("#left-arrow",{x:100, duration:0.25, drawSVG: 0})
     .from("#up-arrow",{ scale:0, duration:0.25, stagger:0.25, drawSVG: 0})
     .from("#down-arrow",{ scale:0, duration:0.25, stagger:0.25, drawSVG: 0})
     .from("#up-arrow",{y:100, duration:0.25, drawSVG: 0, stagger:.25})
     .from("#down-arrow",{y:-100, duration:0.25, drawSVG: 0})
-    .from("#star",{scale:4, rotation: 360, duration:0.5, drawSVG: 0})
+    .from("#star",{scale:1, transformOrigin:"center", duration:0.5, drawSVG: 0})
     return tl;
     
 }
@@ -40,11 +40,10 @@ function patternMotion(){
 function UIMotion(){
     var tl = gsap.timeline()
     tl.from("#box",{drawSVG:"100% 100%"},{duration:1, drawSVG:"50% 50%"},"drawOutline")
-    .from("#bg",{duration:1, scaleY:0})
-    .from("#upload",{duration:0.5, alpha:0, x:0, stagger: 0.2},"-=50%")
-    .from("#arrow",{y: -100, duration:0.25, drawSVG:0})
+    .from(".upload",{duration:0.25, alpha:0, y:20, stagger: 0.12},"-=50%")
+    .from("#arrow",{y: 100, duration:0.25, drawSVG:0})
     .from("#line",{y:100, duration:0.25, drawSVG:0})
-    .from("#arrow",{rotation:360, duration:0.25, drawSVG:0})
+    .from("#bg",{y:100, duration:1, scaleY:0})
     return tl;
 }
 
