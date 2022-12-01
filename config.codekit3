@@ -73,7 +73,7 @@
       "oF" : 2
     },
     "\/dev\/js\/scripts.js" : {
-      "bF" : 4,
+      "bF" : 0,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
@@ -263,7 +263,6 @@
       "pg" : 0,
       "sct" : 0
     },
-<<<<<<< HEAD
     "\/DrawSVGPlugin.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -275,8 +274,6 @@
       "sC" : 3,
       "tS" : 0
     },
-=======
->>>>>>> f6d2d9f50d6224b3ba9ffec90c77468e9e61844c
     "\/gsap-bonus.tgz" : {
       "cB" : 0,
       "ft" : 8192,
@@ -285,7 +282,6 @@
       "oAP" : "\/gsap-bonus.tgz",
       "oF" : 0
     },
-<<<<<<< HEAD
     "\/Motion-Graphics-Logo-Custom\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -555,15 +551,6 @@
       "oF" : 0
     },
     "\/Motion-Graphics-Logo-Custom\/package-lock.json" : {
-=======
-    "\/node_modules" : {
-      "ft" : 65536,
-      "oA" : 2,
-      "oAP" : "\/node_modules",
-      "oF" : 0
-    },
-    "\/package-lock.json" : {
->>>>>>> f6d2d9f50d6224b3ba9ffec90c77468e9e61844c
       "ft" : 524288,
       "oA" : 1,
       "oAP" : "\/Motion-Graphics-Logo-Custom\/package-lock-min.json",
@@ -597,6 +584,14 @@
       "pME" : 1,
       "rFN" : 0,
       "uCM" : 0
+    },
+    "\/package-lock.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/package-lock-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
     },
     "\/package.json" : {
       "ft" : 524288,
@@ -634,11 +629,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 669227926.75338697,
-<<<<<<< HEAD
     "displayValue" : "Motion-Graphics",
-=======
-    "displayValue" : "Motion-Graphics-Logo-Custom",
->>>>>>> f6d2d9f50d6224b3ba9ffec90c77468e9e61844c
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-ucla",
     "iconImageWasSetByUser" : 0
@@ -1064,7 +1055,7 @@
         "optionString" : "'always', {'null': 'always'}"
       },
       "for-direction" : {
-        "active" : 0
+        "active" : 1
       },
       "func-call-spacing" : {
         "active" : 0,
@@ -1095,7 +1086,7 @@
         "optionString" : "{'before': true, 'after': false}"
       },
       "getter-return" : {
-        "active" : 0,
+        "active" : 1,
         "optionString" : "{'allowImplicit': false}"
       },
       "grouped-accessor-pairs" : {
@@ -1220,7 +1211,7 @@
         "active" : 0
       },
       "no-async-promise-executor" : {
-        "active" : 0
+        "active" : 1
       },
       "no-await-in-loop" : {
         "active" : 0
@@ -1247,7 +1238,7 @@
       },
       "no-confusing-arrow" : {
         "active" : 0,
-        "optionString" : "{'allowParens': true}"
+        "optionString" : "{'allowParens': true, 'onlyOneSimpleParam': false}"
       },
       "no-console" : {
         "active" : 1,
@@ -1342,7 +1333,7 @@
       },
       "no-extra-parens" : {
         "active" : 0,
-        "optionString" : "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false, 'ignoreJSX': 'none', 'enforceForArrowConditionals': false, 'enforceForSequenceExpressions': false, 'enforceForNewInMemberExpressions': false}"
+        "optionString" : "'all'"
       },
       "no-extra-semi" : {
         "active" : 1
@@ -1427,7 +1418,7 @@
         "optionString" : "{'groups': [['+', '-', '*', '\/', '%', '**'], ['&', '|', '^', '~', '<<', '>>', '>>>'], ['==', '!=', '===', '!==', '>', '>=', '<', '<='], ['&&', '||'], ['in', 'instanceof']], 'allowSamePrecedence': true}"
       },
       "no-mixed-spaces-and-tabs" : {
-        "active" : 0,
+        "active" : 1,
         "optionString" : ""
       },
       "no-multi-assign" : {
@@ -1493,7 +1484,7 @@
         "active" : 0
       },
       "no-prototype-builtins" : {
-        "active" : 0
+        "active" : 1
       },
       "no-redeclare" : {
         "active" : 1,
@@ -1548,10 +1539,10 @@
       },
       "no-shadow" : {
         "active" : 0,
-        "optionString" : "{'builtinGlobals': false, 'hoist': 'functions', 'allow': []}"
+        "optionString" : "{'builtinGlobals': false, 'hoist': 'functions', 'allow': [], 'ignoreOnInitialization': false}"
       },
       "no-shadow-restricted-names" : {
-        "active" : 0
+        "active" : 1
       },
       "no-sparse-arrays" : {
         "active" : 1
@@ -1588,7 +1579,7 @@
       },
       "no-underscore-dangle" : {
         "active" : 0,
-        "optionString" : "{'allow': [], 'allowAfterThis': false, 'allowAfterSuper': false, 'allowAfterThisConstructor': false, 'enforceInMethodNames': false, 'allowFunctionParams': true}"
+        "optionString" : "{'allow': [], 'allowAfterThis': false, 'allowAfterSuper': false, 'allowAfterThisConstructor': false, 'enforceInMethodNames': false, 'enforceInClassFields': false, 'allowFunctionParams': true}"
       },
       "no-unexpected-multiline" : {
         "active" : 1
@@ -1634,7 +1625,7 @@
       },
       "no-use-before-define" : {
         "active" : 0,
-        "optionString" : "{'functions': true, 'classes': true, 'variables': true}"
+        "optionString" : "{'functions': true, 'classes': true, 'variables': true, 'allowNamedExports': false}"
       },
       "no-useless-backreference" : {
         "active" : 1
@@ -1643,7 +1634,7 @@
         "active" : 0
       },
       "no-useless-catch" : {
-        "active" : 0
+        "active" : 1
       },
       "no-useless-computed-key" : {
         "active" : 0,
@@ -1656,7 +1647,7 @@
         "active" : 0
       },
       "no-useless-escape" : {
-        "active" : 0
+        "active" : 1
       },
       "no-useless-rename" : {
         "active" : 0,
@@ -1680,7 +1671,7 @@
         "active" : 0
       },
       "no-with" : {
-        "active" : 0
+        "active" : 1
       },
       "nonblock-statement-body-position" : {
         "active" : 0,
@@ -1815,7 +1806,7 @@
       },
       "sort-keys" : {
         "active" : 0,
-        "optionString" : "'asc', {'caseSensitive': true, 'natural': false, 'minKeys': 2}"
+        "optionString" : "'asc', {'caseSensitive': true, 'natural': false, 'minKeys': 2, 'allowLineSeparatedGroups': false}"
       },
       "sort-vars" : {
         "active" : 0,
@@ -2056,7 +2047,7 @@
       "autoOutputPathReplace2" : "",
       "autoOutputPathStyle" : 0,
       "optimizerType" : 1,
-      "quality" : 100,
+      "quality" : 90,
       "webpOptimizationPresetUUID" : "lpckwebp-none",
       "webpRGBQuality" : 75
     },
