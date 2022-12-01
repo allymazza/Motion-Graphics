@@ -73,7 +73,7 @@
       "oF" : 2
     },
     "\/dev\/js\/scripts.js" : {
-      "bF" : 0,
+      "bF" : 4,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
@@ -263,6 +263,7 @@
       "pg" : 0,
       "sct" : 0
     },
+<<<<<<< HEAD
     "\/DrawSVGPlugin.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -274,6 +275,8 @@
       "sC" : 3,
       "tS" : 0
     },
+=======
+>>>>>>> f6d2d9f50d6224b3ba9ffec90c77468e9e61844c
     "\/gsap-bonus.tgz" : {
       "cB" : 0,
       "ft" : 8192,
@@ -282,6 +285,7 @@
       "oAP" : "\/gsap-bonus.tgz",
       "oF" : 0
     },
+<<<<<<< HEAD
     "\/Motion-Graphics-Logo-Custom\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -551,6 +555,15 @@
       "oF" : 0
     },
     "\/Motion-Graphics-Logo-Custom\/package-lock.json" : {
+=======
+    "\/node_modules" : {
+      "ft" : 65536,
+      "oA" : 2,
+      "oAP" : "\/node_modules",
+      "oF" : 0
+    },
+    "\/package-lock.json" : {
+>>>>>>> f6d2d9f50d6224b3ba9ffec90c77468e9e61844c
       "ft" : 524288,
       "oA" : 1,
       "oAP" : "\/Motion-Graphics-Logo-Custom\/package-lock-min.json",
@@ -621,7 +634,11 @@
   },
   "projectAttributes" : {
     "creationDate" : 669227926.75338697,
+<<<<<<< HEAD
     "displayValue" : "Motion-Graphics",
+=======
+    "displayValue" : "Motion-Graphics-Logo-Custom",
+>>>>>>> f6d2d9f50d6224b3ba9ffec90c77468e9e61844c
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-ucla",
     "iconImageWasSetByUser" : 0

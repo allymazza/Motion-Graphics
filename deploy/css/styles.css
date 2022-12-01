@@ -400,10 +400,12 @@ textarea {
   grid-template-rows: 20% auto 20%;
   height: 100vh;
 }
-#logo > div {
+#logo div {
   grid-area: logo;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #10182A;
+}
+#logo div #clip {
+  opacity: 0;
 }

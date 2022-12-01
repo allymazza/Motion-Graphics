@@ -8,17 +8,14 @@
     grid-template-rows: 20% auto 20%;
     height: 100vh;
 
-    >div{
+    div{
         grid-area: logo;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #10182A;
-        
 
-        svg{
-            // width: 50%;
-            
+        #clip{
+            opacity: 0;
         }
     }
 }

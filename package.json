@@ -8,6 +8,8 @@
   "repository": {},
   "private": true,
   "dependencies": {
-    "gsap": "file:gsap-bonus.tgz"
+    "drawsvg": "^1.1.0",
+    "gsap": "file:gsap-bonus.tgz",
+    "gsap-drawsvg": "^1.0.0"
   }
 }
