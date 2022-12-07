@@ -12,15 +12,12 @@ gsap.set("#clip",{transformOrigin: "center", opacity: 0});
 
 function badgeAnimation(){
         var tl = gsap.timeline();
-        tl.from("#blue",{duration:.5, x: 200, rotation: 90, scale:.5})
-        .from("#orange",{duration:.5, y: -200, rotation: 180, scale:.5})
-        .from("#red",{duration:.5, y: -200, rotation: 360, scale:.5})
+        tl.from("#blue",{duration:.75, x: 400, rotation: 90, scale:3})
+        .from("#orange",{duration:.75, y: -300, rotation: 180, scale:3})
+        .from("#red",{duration:.75, y: -300, rotation: 360, scale:3})
         .from("#cursive-s", {duration:1, drawSVG: "90% 100%"})
-        .from("#clip", {duration: 1, scale:.5, x:-200, opacity: 0, transformOrigin:"50% 50%"})
+        .from("#clip", {duration: .5, x:-200, opacity: 0, transformOrigin:"50% 50%"})
         .to("#badge", {duration: 1, x:0})
-
-        // .from("", 1, { y:-100,scale:0.85 })
-        // .to(".logo-svg", 1, { opacity:1 }, 0)
 
         return tl; 
 }
