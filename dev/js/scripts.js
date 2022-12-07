@@ -21,7 +21,7 @@ function circleAnimation(){
 function greenAnimation(){
         var tl = gsap.timeline();
         tl.to("#green", {duration: 2, motionPath:{
-                path: "#greenpath", align:"#greenpath", autoRotate:true
+                path: "#greenpath", align:"#greenpath", autoRotate:true,  ease: "power3.Out"
         }})
 
         return tl;
@@ -84,14 +84,14 @@ function coralAnimation(){
 
 function pinkAnimation(){
         var tl = gsap.timeline();
-        tl.from("#pink", {duration: .25, opacity: 0, x: -20})
+        tl.from("#pink", {duration: .25, opacity: 0, y: -20})
 
         return tl;
 }
 
 function purpleAnimation(){
         var tl = gsap.timeline();
-        tl.from("#purple", {duration: .25, opacity: 0, x: -20})
+        tl.from("#purple", {duration: .25, opacity: 0, x: 20})
 
         return tl;
 }
