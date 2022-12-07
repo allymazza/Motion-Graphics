@@ -21,7 +21,7 @@ function circleAnimation(){
 function greenAnimation(){
         var tl = gsap.timeline();
         tl.to("#green", {duration: 2, motionPath:{
-                path: "#greenpath", align:"#greenpath"
+                path: "#greenpath", align:"#greenpath", autoRotate:true
         }})
 
         return tl;
@@ -30,7 +30,7 @@ function greenAnimation(){
 function orangeAnimation(){
         var tl = gsap.timeline();
         tl.to("#orange", {duration: 2,  motionPath:{
-                path: "#orangepath", align:"#orangepath"
+                path: "#orangepath", align:"#orangepath", autoRotate:true
         }}, "greenAnimation")
 
         return tl;
@@ -39,7 +39,7 @@ function orangeAnimation(){
 function magentaAnimation(){
         var tl = gsap.timeline();
         tl.to("#magenta", {duration: 2, motionPath:{
-                path: "#magentapath", align:"#magentapath"
+                path: "#magentapath", align:"#magentapath", autoRotate:true
         }}, "orangeAnimation")
 
         return tl;
@@ -48,7 +48,7 @@ function magentaAnimation(){
 function blueAnimation(){
         var tl = gsap.timeline();
         tl.to("#blue", {duration: 2, motionPath:{
-                path: "#bluepath", align:"#bluepath"
+                path: "#bluepath", align:"#bluepath", autoRotate:true
         }}, "blueAnimation")
 
         return tl;
@@ -64,6 +64,48 @@ function limeAnimation(){
 function mintAnimation(){
         var tl = gsap.timeline();
         tl.from("#mint", {duration: .25, opacity: 0, x: -20})
+
+        return tl;
+}
+
+function lightOrangeAnimation(){
+        var tl = gsap.timeline();
+        tl.from("#lightorange", {duration: .25, opacity: 0, x: -20})
+
+        return tl;
+}
+
+function coralAnimation(){
+        var tl = gsap.timeline();
+        tl.from("#coral", {duration: .25, opacity: 0, x: -20})
+
+        return tl;
+}
+
+function pinkAnimation(){
+        var tl = gsap.timeline();
+        tl.from("#pink", {duration: .25, opacity: 0, x: -20})
+
+        return tl;
+}
+
+function purpleAnimation(){
+        var tl = gsap.timeline();
+        tl.from("#purple", {duration: .25, opacity: 0, x: -20})
+
+        return tl;
+}
+
+function lightBlueAnimation(){
+        var tl = gsap.timeline();
+        tl.from("#lightblue", {duration: .25, opacity: 0, x: -20})
+
+        return tl;
+}
+
+function periwinkleAnimation(){
+        var tl = gsap.timeline();
+        tl.from("#periwinkle", {duration: .25, opacity: 0, x: -20})
 
         return tl;
 }
@@ -84,12 +126,12 @@ mainTL.add(circleAnimation())
 .add(blueAnimation())
 .add(limeAnimation())
 .add(mintAnimation())
-// .add(lightOrangeAnimation())
-// .add(coralAnimation())
-// .add(pinkAnimation())
-// .add(purpleAnimation())
-// .add(lightBlueAnimation())
-// .add(periwinkleAnimation())
+.add(lightOrangeAnimation())
+.add(coralAnimation())
+.add(pinkAnimation())
+.add(purpleAnimation())
+.add(lightBlueAnimation())
+.add(periwinkleAnimation())
 .add(opalAnimation())
 
 
