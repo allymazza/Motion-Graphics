@@ -11,6 +11,7 @@ gsap.set("#orange",{transformOrigin: "center"});
 gsap.set("#magenta",{transformOrigin: "center"});
 gsap.set("#blue",{transformOrigin: "center"});
 
+
 function circleAnimation(){
         var tl = gsap.timeline();
         tl.from("#circle", {duration: 1, scale: 3, stroke:.2, opacity:0, ease: "elastic.out(2, 5)"})
@@ -20,7 +21,7 @@ function circleAnimation(){
 
 function greenAnimation(){
         var tl = gsap.timeline();
-        tl.from("#green", {opacity: 0}, "greenAnimation")
+        tl.from("#green", {opacity: 0, scaleX:-5}, "greenAnimation")
         .to("#green", {duration: .5, motionPath:{
                 path: "#greenpath", align:"#greenpath", autoRotate:true,  ease: "power3.Out"
         }}, "greenAnimation") 
@@ -31,7 +32,7 @@ function greenAnimation(){
 
 function orangeAnimation(){
         var tl = gsap.timeline();
-        tl.from("#orange", {opacity: 0}, "orangeAnimation")
+        tl.from("#orange", {opacity: 0, scaleX:-5}, "orangeAnimation")
         .to("#orange", {duration: .5,  motionPath:{
                 path: "#orangepath", align:"#orangepath", autoRotate:true
         }}, "orangeAnimation")
@@ -42,7 +43,7 @@ function orangeAnimation(){
 
 function magentaAnimation(){
         var tl = gsap.timeline();
-        tl.from("#magenta", {opacity: 0}, "magentaAnimation")
+        tl.from("#magenta", {opacity: 0, scaleX:-5}, "magentaAnimation")
         .to("#magenta", {duration: .5, motionPath:{
                 path: "#magentapath", align:"#magentapath", autoRotate:true
         }}, "magentaAnimation")
@@ -53,11 +54,11 @@ function magentaAnimation(){
 
 function blueAnimation(){
         var tl = gsap.timeline();
-        tl.from("#blue", {opacity: 0}, "blueAnimation")
+        tl.from("#blue", {opacity: 0, scaleX:-5}, "blueAnimation")
         .to("#blue", {duration: .5, motionPath:{
                 path: "#bluepath", align:"#bluepath", autoRotate:true
         }}, "blueAnimation")
-        .set("#blue", {rotation: -190, x:-2, y:2})
+        .set("#blue", {rotation: -190, x:-2, y:1})
 
         return tl;
 }
@@ -120,7 +121,7 @@ function periwinkleAnimation(){
 
 function logoMarkAnimation(){
         var tl = gsap.timeline();
-        tl.to("#logomark", {duration: .5, roattion:90})
+        tl.to("#logo-mark", {duration: .5, roattion: 90})
 
         return tl;
 }
