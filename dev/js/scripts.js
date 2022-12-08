@@ -13,106 +13,121 @@ gsap.set("#blue",{transformOrigin: "center"});
 
 function circleAnimation(){
         var tl = gsap.timeline();
-        tl.from("#circle", {duration:2, scale: 3, stroke:.2, opacity:0, ease: "elastic.out(2, 5)"})
+        tl.from("#circle", {duration: 1, scale: 3, stroke:.2, opacity:0, ease: "elastic.out(2, 5)"})
 
         return tl;
 }
 
 function greenAnimation(){
         var tl = gsap.timeline();
-        tl.to("#green", {duration: 2, motionPath:{
+        tl.from("#green", {opacity: 0}, "greenAnimation")
+        .to("#green", {duration: .5, motionPath:{
                 path: "#greenpath", align:"#greenpath", autoRotate:true,  ease: "power3.Out"
-        }})
+        }}, "greenAnimation") 
+        .to("#green", {rotation: -180, y:-2, x:1 })
 
         return tl;
 }
 
 function orangeAnimation(){
         var tl = gsap.timeline();
-        tl.to("#orange", {duration: 2,  motionPath:{
+        tl.from("#orange", {opacity: 0}, "orangeAnimation")
+        .to("#orange", {duration: .5,  motionPath:{
                 path: "#orangepath", align:"#orangepath", autoRotate:true
-        }}, "greenAnimation")
+        }}, "orangeAnimation")
+        .set("#orange", {rotation: -180,  y:-2, x:-2})
 
         return tl;
 }
 
 function magentaAnimation(){
         var tl = gsap.timeline();
-        tl.to("#magenta", {duration: 2, motionPath:{
+        tl.from("#magenta", {opacity: 0}, "magentaAnimation")
+        .to("#magenta", {duration: .5, motionPath:{
                 path: "#magentapath", align:"#magentapath", autoRotate:true
-        }}, "orangeAnimation")
+        }}, "magentaAnimation")
+        .set("#magenta", {rotation: -180, x: -2, y:-1})
 
         return tl;
 }
 
 function blueAnimation(){
         var tl = gsap.timeline();
-        tl.to("#blue", {duration: 2, motionPath:{
+        tl.from("#blue", {opacity: 0}, "blueAnimation")
+        .to("#blue", {duration: .5, motionPath:{
                 path: "#bluepath", align:"#bluepath", autoRotate:true
         }}, "blueAnimation")
+        .set("#blue", {rotation: -190, x:-2, y:2})
 
         return tl;
 }
 
 function limeAnimation(){
         var tl = gsap.timeline();
-        tl.from("#lime", {duration: .25, opacity: 0, x: -20})
+        tl.from("#lime", {duration: .2, opacity: 0, x: -20})
 
         return tl;
 }
 
 function mintAnimation(){
         var tl = gsap.timeline();
-        tl.from("#mint", {duration: .25, opacity: 0, x: -20})
+        tl.from("#mint", {duration: .2, opacity: 0, y: 20})
 
         return tl;
 }
 
 function lightOrangeAnimation(){
         var tl = gsap.timeline();
-        tl.from("#lightorange", {duration: .25, opacity: 0, x: -20})
+        tl.from("#lightorange", {duration: .2, opacity: 0, x: -20})
 
         return tl;
 }
 
 function coralAnimation(){
         var tl = gsap.timeline();
-        tl.from("#coral", {duration: .25, opacity: 0, x: -20})
+        tl.from("#coral", {duration: .2, opacity: 0, x: -20})
 
         return tl;
 }
 
 function pinkAnimation(){
         var tl = gsap.timeline();
-        tl.from("#pink", {duration: .25, opacity: 0, y: -20})
+        tl.from("#pink", {duration: .2, opacity: 0, y: -20})
 
         return tl;
 }
 
 function purpleAnimation(){
         var tl = gsap.timeline();
-        tl.from("#purple", {duration: .25, opacity: 0, x: 20})
+        tl.from("#purple", {duration: .2, opacity: 0, x: 20})
 
         return tl;
 }
 
 function lightBlueAnimation(){
         var tl = gsap.timeline();
-        tl.from("#lightblue", {duration: .25, opacity: 0, x: -20})
+        tl.from("#lightblue", {duration: .2, opacity: 0, y: 20})
 
         return tl;
 }
 
 function periwinkleAnimation(){
         var tl = gsap.timeline();
-        tl.from("#periwinkle", {duration: .25, opacity: 0, x: -20})
+        tl.from("#periwinkle", {duration: .2, opacity: 0, x: 20})
+
+        return tl;
+}
+
+function logoMarkAnimation(){
+        var tl = gsap.timeline();
+        tl.to("#logomark", {duration: .5, roattion:90})
 
         return tl;
 }
 
 function opalAnimation(){
         var tl = gsap.timeline();
-        tl.from("#opal", {duration:1, opacity:0, x:100})
+        tl.from("#opal", {duration:.5, opacity:0, x:100})
         
         return tl;
 }
@@ -132,6 +147,7 @@ mainTL.add(circleAnimation())
 .add(purpleAnimation())
 .add(lightBlueAnimation())
 .add(periwinkleAnimation())
+.add(logoMarkAnimation())
 .add(opalAnimation())
 
 
